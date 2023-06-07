@@ -1,0 +1,13 @@
+{% load static %}
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">name</label>
+    <input type="text" id="name" name="name">
+    <label for="age">age</label>
+    <input type="text" id="age" name="age">
+    <label for="height">height</label>
+    <input type="text" id="height" name="height">
+    <input type="submit" value="Создать">
+</form>

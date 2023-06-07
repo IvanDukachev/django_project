@@ -1,0 +1,10 @@
+{% block content %}
+Person DATA
+<ul>
+    {% for el in persons %}
+        <li>{{ el.name }}</li>
+        <li>{{ el.age }}</li>
+        <li>{{ el.height }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
